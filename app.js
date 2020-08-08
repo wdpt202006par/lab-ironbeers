@@ -29,10 +29,10 @@ app.get('/beers', (req, res) => {
       console.log('Beers from the database: ' + beersFromApi);
 
       res.render('beers', {
-        beers: beersFromApi
+        beersFromApi: beersFromApi
       });
     })
     .catch(error => console.log(error));
 });
 
-app.listen(3001, () => console.log('🏃‍ on port 3001'));
+app.listen(3000, () => console.log('🏃‍ on port 3000'));
