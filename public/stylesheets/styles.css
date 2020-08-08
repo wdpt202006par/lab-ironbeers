@@ -34,7 +34,6 @@ a {
 	margin-bottom: 20px;
 }
 
-
 nav {
 	background: #2081c3;
 	padding: 20px 40px;
@@ -43,6 +42,7 @@ nav {
 nav a {
 	padding: 5px 10px;
 	color: white;
+	font-size: 1.1em;
 	margin-right: 20px;
 }
 
@@ -80,13 +80,12 @@ main {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin: 100px 0;
-	overflow: hidden;
 }
 
 .beer-card {
   display: flex;
   flex-direction: column;
-  flex: 1 0 400px;
+  flex: 400px;
   padding: 20px 40px;
   justify-items: center;
 }
@@ -96,11 +95,37 @@ main {
   height: 150px;
 }
 
+span > h2 {
+	margin-bottom: 1em;
+}
+
+span > p {
+	font-size: 1.3em;
+	margin-bottom: 1em;
+}
+
+.beer {
+	border: 2px black solid;
+}
+
+.beer > div {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+} 
+
+.beer > p {
+	margin: 15px;
+	font-size: 1.3em;
+}
+
 footer {
   padding: 30px 30px;
   background: #0a2c42;
   color: white;
-  position: fixed;
+	position: fixed;
+	text-align: center;
+	font-size: 1.3em;
   bottom: 0;
   width: 100%;
 }
