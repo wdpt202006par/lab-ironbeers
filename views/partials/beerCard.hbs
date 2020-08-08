@@ -1,0 +1,14 @@
+  <div class="card">
+    <img src="{{this.image_url}}" alt="" class="beer-img">
+    <h5>Name:</h5><p>{{this.name}}</p>
+    <br>
+    <h5>Description: </h5><p>{{this.description}}</p>
+    <h5>Tagline:</h5><p>{{this.tagline}}</p>
+    <h5>Food Pairing:</h5>
+    <ul>
+      {{#each this.food_pairing}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <h5>Brewer Tips:</h5>{{this.brewers_tips}}
+  </div>
