@@ -1,7 +1,30 @@
-/*
-white: #f7f9f9;
+/* white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
-*/
+font-family: Arial,
+Helvetica,
+sans-serif; */
+
+body {
+    margin: 0px;
+}
+
+nav {
+    background-color: #2081c3;
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    flex-direction: row;
+    align-content: flex-end;
+    margin-right: 40px;
+}
+
+.beers-card {
+    width: 50px
+}
