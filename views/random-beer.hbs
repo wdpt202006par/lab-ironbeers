@@ -1,0 +1,10 @@
+{{#each responseFromAPI}}
+    {{>beerpartial this}}
+    <h2>Food Pairing</h2>
+    <ul>
+        {{#each food_pairing}}
+            <li>{{this}}</li>
+        {{/each}}
+    </ul>
+    <h2>Brewers Tips:</h2> <span>{{brewers_tips}}</span>
+{{/each}}
